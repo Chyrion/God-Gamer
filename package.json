@@ -12,8 +12,8 @@
     "url": "git+https://github.com/Chyrion/God-Gamer.git"
   },
   "engines": {
-    "node": "8.3.0",
-    "npm": "*"
+    "node": "16.13.0",
+    "npm": "8.3.0"
   },
   "author": "",
   "license": "ISC",
