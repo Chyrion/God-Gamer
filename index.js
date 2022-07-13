@@ -83,7 +83,7 @@ client.on('interactionCreate', async (interaction) => {
         active = true;
         date.setDate(currDate.getDate());
         date = currDate;
-        date.setHours(18, 00);
+        date.setHours(15, 00);
         gamingDate = time(date);
         relDate = time(date, 'R');
         gamingEmbed_enabled.title = `GAMING ${relDate}`;
