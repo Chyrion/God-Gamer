@@ -29,7 +29,7 @@ const buttonUpdate = async (i, state_info) => {
   for (i = 0; i < buttons.length; i++) {
     if (
       buttons[i].data.custom_id === 'later' &&
-      state_info.time.hour() == 18 &&
+      state_info.time.hour() == 19 &&
       state_info.time.minute() == 0
     ) {
       buttons[i].data.disabled = true;
