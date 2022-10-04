@@ -4,13 +4,13 @@ require('dotenv').config();
 
 const commands = [
   new SlashCommandBuilder()
-    .setName('dev_gaming')
+    .setName('gaming')
     .setDescription('Make a gaming request'),
   new SlashCommandBuilder()
-    .setName('dev_gamingreset')
+    .setName('gamingreset')
     .setDescription('ADMIN: Resets the gaming request'),
   new SlashCommandBuilder()
-    .setName('dev_gamingtimereset')
+    .setName('gamingtimereset')
     .setDescription('ADMIN: Resets the gaming time'),
 ];
 

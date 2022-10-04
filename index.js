@@ -36,9 +36,9 @@ client.once('ready', () => {
 client.on('interactionCreate', async (i) => {
   if (i.isChatInputCommand()) {
     const { commandName } = i;
-    if (commandName === 'dev_gaming') {
+    if (commandName === 'gaming') {
       state_info = await gaming_create(i, state_info);
-    } else if (commandName === 'dev_reset') {
+    } else if (commandName === 'gamingreset') {
       if (i.user.id !== process.env.ADMIN_ID)
         i.reply({
           content: 'Only the bot admin can use this command',
@@ -48,7 +48,7 @@ client.on('interactionCreate', async (i) => {
         state_info.reset_bypass = true;
         i.reply({ content: 'Reset bypass active', ephemeral: true });
       }
-    } else if (commandName === 'dev_time') {
+    } else if (commandName === 'gamingtimereset') {
       if (i.user.id !== process.env.ADMIN_ID)
         i.reply({
           content: 'Only the bot admin can use this command',

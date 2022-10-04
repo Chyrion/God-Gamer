@@ -1,7 +1,13 @@
-# God-Gamer-Dev
+# God Gamer 2.0
 
-To-do:
+A 90% rewrite of v1, 2.0 brings a clearer structure to the source code and with it (hopefully) a more stable experience. Even has added functionality!\*
 
-- setInterval for keeping the relative time up to date?
-  - May also help fix the time getting set to a random time outside of the bounds
-    - In relation to this, should maybe have a failsafe that sets the time to within bounds if it detects that something is out of whack
+### Commands
+
+- gaming
+  Makes a new gaming request! Sets the time to 15:00 UTC, which can be adjusted to be later or earlier. People can register their interest (or not), and thus can indicate how popular the gaming session will be. If something comes up, cancellation is also an option
+  **Admin**
+- gamingreset
+  If something breaks with the request, an admin can use this command to bypass limitations on making a new request and initiate a new one.
+- gamingtimereset
+  If the time breaks (as it has done in v1), an admin can reset the time to the base value.
